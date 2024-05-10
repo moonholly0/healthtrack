@@ -1,0 +1,83 @@
+import SwiftUI
+
+struct WelcomeView: View {
+    var body: some View {
+        VStack {
+            Text("Bem-Vindo ao HealthTrack")
+                .font(.title)
+                .padding()
+            // Insira a imagem do logotipo da HealthTrack aqui
+            Button(action: {
+                // Ação para login
+            }) {
+                Text("Login")
+            }
+            Button(action: {
+                // Ação para registro
+            }) {
+                Text("Registrar")
+            }
+        }
+    }
+}
+
+import SwiftUI
+
+struct RegisterView: View {
+    @State private var age = ""
+    @State private var sex = ""
+    @State private var height = ""
+    @State private var weight = ""
+    // Outros campos do formulário
+
+    var body: some View {
+        VStack {
+            TextField("Idade", text: $age)
+            TextField("Sexo", text: $sex)
+            TextField("Altura", text: $height)
+            TextField("Peso", text: $weight)
+            // Outros campos do formulário
+            Button(action: {
+                // Ação para enviar dados
+            }) {
+                Text("Enviar")
+            }
+        }
+    }
+}
+
+import SwiftUI
+
+struct DashboardView: View {
+    var body: some View {
+        // Implemente o layout do dashboard com os gráficos ou cards mostrando os dados de atividades físicas
+        Text("Dashboard")
+    }
+}
+
+import SwiftUI
+
+struct ProfileDetailView: View {
+    var body: some View {
+        // Implemente o layout para visualizar e editar as informações pessoais e de saúde do usuário
+        Text("Detalhes do Perfil")
+    }
+}
+
+import SwiftUI
+
+struct PhysicalActivitiesView: View {
+    var body: some View {
+        // Implemente o layout para mostrar um registro detalhado das atividades físicas do usuário
+        Text("Atividades Físicas")
+    }
+}
+
+import SwiftUI
+
+struct WearablesIntegrationView: View {
+    var body: some View {
+        // Implemente o layout para conectar e gerenciar dispositivos wearables
+        Text("Integração com Dispositivos Wearables")
+    }
+}
